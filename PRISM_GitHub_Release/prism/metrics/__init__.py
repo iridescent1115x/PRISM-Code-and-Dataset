@@ -1,0 +1,2 @@
+"""PRISM metrics namespace."""
+

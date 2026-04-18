@@ -1,0 +1,37 @@
+# Core runtime - GPU version for RTX 4060 (CUDA 12.1)
+# Compatible with PyTorch 2.2.1 + CUDA 12.1
+
+# PyTorch and related packages (GPU version)
+torch==2.2.1+cu121
+torchvision==0.17.1+cu121
+torchaudio==2.2.1+cu121
+
+# DGL with CUDA support
+dgl==2.2.1
+dglgo==0.0.2
+
+# Python packages
+numpy>=1.26,<2.0
+pandas>=2.1,<2.3
+scipy>=1.11
+tqdm>=4.66
+torchmetrics>=1.3
+ogb>=1.3.6
+pydantic>=2.0
+torchdata==0.7.1
+
+# Other dependencies
+shortuuid>=1.0.11
+PyYAML>=6.0
+requests>=2.28
+matplotlib>=3.5
+lmdb>=1.4
+Pillow>=9.0
+faiss-cpu>=1.7.3
+gensim>=4.1
+
+# NOTE:
+# Install PyTorch first, then other packages:
+# pip install torch==2.2.1+cu121 torchvision==0.17.1+cu121 torchaudio==2.2.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+# pip install dgl==2.2.1
+# pip install -r requirements.txt --no-deps

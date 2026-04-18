@@ -1,0 +1,2 @@
+"""PRISM vector search namespace."""
+
